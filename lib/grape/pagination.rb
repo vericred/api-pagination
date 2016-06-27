@@ -40,7 +40,7 @@ module Grape
           route_setting :per_page, options[:per_page]
           route_setting :max_per_page, options[:max_per_page]
           params do
-            optional :page,     :type => Integer, :default => 1,
+            optional :page,     :type => Integer,
                                 :desc => 'Page of results to fetch.'
             optional :per_page, :type => Integer,
                                 :desc => 'Number of results to return per page.'
